@@ -1,0 +1,17 @@
+@use '../abstracts' as abs;
+
+.hide {
+  display: none;
+
+  &-mobile {
+    @include abs.breakpointDown(medium) {
+      display: none;
+    }
+  }
+
+  &-desktop {
+    @include abs.breakpoint(medium) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@use '../abstracts' as abs;
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: abs.$fontBellefair;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 80px;
+
+  @include abs.breakpoint(medium) {
+    font-size: 9.375rem;
+  }
+}
+
+h2 {
+  font-size: 56px;
+
+  @include abs.breakpoint(medium) {
+    font-size: 80px;
+  }
+
+  @include abs.breakpoint(large) {
+    font-size: 6.25rem;
+  }
+}
+
+h3 {
+  font-size: 24px;
+
+  @include abs.breakpoint(medium) {
+    font-size: 40px;
+  }
+
+  @include abs.breakpoint(medium) {
+    font-size: 3.5rem;
+  }
+}
+
+h4 {
+  font-size: 20px;
+
+  @include abs.breakpoint(medium) {
+    font-size: 2rem;
+  }
+}
+
+h5 {
+  font-size: 1rem;
+  font-family: abs.$fontBarlowCondensed;
+  letter-spacing: 0.296875rem;
+  color: abs.$lightBlue;
+  font-weight: 400;
+
+  @include abs.breakpoint(medium) {
+    font-size: 20px;
+  }
+
+  @include abs.breakpoint(large) {
+    font-size: 1.75rem;
+  }
+}
+
+p {
+  font-size: 15px;
+  font-family: abs.$fontBarlow;
+  font-weight: 400;
+  color: abs.$lightBlue;
+
+  @include abs.breakpoint(medium) {
+    font-size: 1rem;
+  }
+
+  @include abs.breakpoint(large) {
+    font-size: 1.125rem;
+  }
+}
+
+.subheading {
+  font-weight: 400;
+
+  &-1 {
+    font-family: abs.$fontBellefair;
+    font-size: 1.75rem;
+  }
+
+  &-2 {
+    font-family: abs.$fontBarlowCondensed;
+    font-size: 0.875rem;
+    letter-spacing: 0.146875rem;
+  }
+}
+
+.nav-text {
+  font-size: 14px;
+  font-family: abs.$fontBarlowCondensed;
+  font-weight: 400;
+  letter-spacing: 0.16875rem;
+
+  @include abs.breakpoint(medium) {
+    font-size: 1rem;
+  }
+}
