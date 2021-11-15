@@ -17,11 +17,13 @@ body {
   font-size: 100%;
   background-color: abs.$black;
   color: abs.$white;
+  min-height: 100vh;
 }
 
 a {
   text-decoration: none;
   display: inline-block;
+  color: abs.$white;
 }
 
 img {

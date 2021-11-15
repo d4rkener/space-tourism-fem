@@ -9,7 +9,7 @@ h4 {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 5rem;
 
   @include abs.breakpoint(medium) {
     font-size: 9.375rem;
@@ -17,10 +17,10 @@ h1 {
 }
 
 h2 {
-  font-size: 56px;
+  font-size: 3.5rem;
 
   @include abs.breakpoint(medium) {
-    font-size: 80px;
+    font-size: 5rem;
   }
 
   @include abs.breakpoint(large) {
@@ -29,10 +29,10 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
 
   @include abs.breakpoint(medium) {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   @include abs.breakpoint(medium) {
@@ -41,7 +41,7 @@ h3 {
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 1.25rem;
 
   @include abs.breakpoint(medium) {
     font-size: 2rem;
@@ -56,7 +56,7 @@ h5 {
   font-weight: 400;
 
   @include abs.breakpoint(medium) {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   @include abs.breakpoint(large) {
@@ -65,7 +65,7 @@ h5 {
 }
 
 p {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-family: abs.$fontBarlow;
   font-weight: 400;
   color: abs.$lightBlue;
@@ -95,10 +95,11 @@ p {
 }
 
 .nav-text {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: abs.$fontBarlowCondensed;
   font-weight: 400;
   letter-spacing: 0.16875rem;
+  text-transform: uppercase;
 
   @include abs.breakpoint(medium) {
     font-size: 1rem;
