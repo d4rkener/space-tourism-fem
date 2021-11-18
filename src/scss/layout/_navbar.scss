@@ -35,9 +35,17 @@
       background: #ffffff;
       mix-blend-mode: normal;
       opacity: 0.25;
-      width: 37.5rem;
+      width: 38.5%;
       z-index: 20;
       left: 12.5rem;
+    }
+
+    @media (min-width: 96.875rem) {
+      width: 48.5%;
+    }
+
+    @media (min-width: 124.375rem) {
+      width: 58.5%;
     }
   }
 
@@ -103,6 +111,46 @@
 
         @include abs.breakpoint(large) {
           margin-right: 3rem;
+        }
+      }
+    }
+  }
+
+  &__mobile-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(5.0625rem);
+    padding: 2rem;
+
+    div:first-child {
+      text-align: right;
+
+      i {
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: abs.$lightBlue;
+      }
+    }
+
+    div:last-child {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      a {
+        font-size: 1rem;
+
+        span {
+          font-weight: 700;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 2rem;
         }
       }
     }
