@@ -1,0 +1,79 @@
+@use '../abstracts' as abs;
+
+.hero {
+  padding: 3rem 1.5rem;
+  min-height: calc(100vh - 5.725rem);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include abs.breakpoint(medium) {
+    padding: 6.625rem;
+    min-height: calc(100vh - 6.225rem);
+    gap: 1.875rem;
+  }
+
+  @include abs.breakpoint(large) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10.25rem;
+    min-height: calc(100vh - 8.475rem);
+  }
+
+  @media (min-width: 81.25rem) {
+    gap: 25rem;
+  }
+
+  &__text--content {
+    @include abs.breakpoint(large) {
+      text-align: left;
+      flex: 1;
+    }
+
+    h1 {
+      margin: 1rem 0;
+    }
+  }
+
+  &__button {
+    a {
+      padding: 3.75rem 1.75rem;
+      background-color: abs.$white;
+      border-radius: 50%;
+      position: relative;
+
+      @include abs.breakpoint(medium) {
+        padding: 6.625rem 3.625rem;
+      }
+
+      h4 {
+        color: abs.$black;
+      }
+
+      &:hover {
+        &::before {
+          content: '';
+          transition: all 200ms ease-out;
+          position: absolute;
+          top: -29px;
+          left: -29px;
+          width: 12.5rem;
+          height: 12.5rem;
+          border-radius: 50%;
+          background: #ffffff;
+          mix-blend-mode: normal;
+          opacity: 0.1;
+
+          @include abs.breakpoint(medium) {
+            top: -48px;
+            left: -48px;
+            width: 21.875rem;
+            height: 21.875rem;
+          }
+        }
+      }
+    }
+  }
+}
