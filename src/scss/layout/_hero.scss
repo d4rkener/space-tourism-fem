@@ -11,7 +11,7 @@
   @include abs.breakpoint(medium) {
     padding: 6.625rem;
     min-height: calc(100vh - 6.225rem);
-    gap: 1.875rem;
+    gap: 9.75rem;
   }
 
   @include abs.breakpoint(large) {

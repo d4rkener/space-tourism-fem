@@ -125,6 +125,7 @@
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(5.0625rem);
     padding: 2rem;
+    z-index: 100;
 
     div:first-child {
       text-align: right;
