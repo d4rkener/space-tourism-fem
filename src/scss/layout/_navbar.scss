@@ -62,9 +62,13 @@
     padding: 2.5rem;
 
     @include abs.breakpoint(large) {
-      background: rgba(255, 255, 255, 0.04);
-      backdrop-filter: blur(5.09678125rem);
+      background-color: #151823;
       padding: 2.375rem 7.5rem;
+
+      @supports (backdrop-filter: blur(5.0625rem)) {
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(5.0625rem);
+      }
     }
 
     a {
@@ -122,10 +126,14 @@
     right: 0;
     width: 60%;
     min-height: 100vh;
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(5.0625rem);
+    background: abs.$black;
     padding: 2rem;
     z-index: 100;
+
+    @supports (backdrop-filter: blur(5.0625rem)) {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(5.0625rem);
+    }
 
     div:first-child {
       text-align: right;
