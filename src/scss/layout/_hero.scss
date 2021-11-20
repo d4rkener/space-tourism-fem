@@ -9,12 +9,13 @@
   justify-content: space-between;
 
   @include abs.breakpoint(medium) {
-    padding: 6.625rem;
+    padding: 6.625rem 2.5rem;
     min-height: calc(100vh - 6.225rem);
     gap: 9.75rem;
   }
 
   @include abs.breakpoint(large) {
+    padding: 6.625rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
