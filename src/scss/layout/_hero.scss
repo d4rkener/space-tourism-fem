@@ -36,6 +36,18 @@
     h1 {
       margin: 1rem 0;
     }
+
+    > p {
+      margin: 0 auto;
+
+      @include abs.breakpoint(medium) {
+        width: 60%;
+      }
+
+      @include abs.breakpoint(large) {
+        width: unset;
+      }
+    }
   }
 
   &__button {
