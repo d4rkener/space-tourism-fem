@@ -1,16 +1,16 @@
 @use '../abstracts' as abs;
 
 body.destinationPage {
-  background-image: url('@/assets/destination/background-destination-mobile.jpg');
+  background-image: url('@assets/destination/background-destination-mobile.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 
   @include abs.breakpoint(medium) {
-    background-image: url('@/assets/destination/background-destination-tablet.jpg');
+    background-image: url('@assets/destination/background-destination-tablet.jpg');
   }
 
   @include abs.breakpoint(large) {
-    background-image: url('@/assets/destination/background-destination-desktop.jpg');
+    background-image: url('@assets/destination/background-destination-desktop.jpg');
   }
 }

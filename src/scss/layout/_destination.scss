@@ -119,6 +119,7 @@
     &--informations {
       h2 {
         margin-top: 1.25rem;
+        text-transform: uppercase;
 
         @include abs.breakpoint(medium) {
           margin: 2rem 0 0.5rem 0;
